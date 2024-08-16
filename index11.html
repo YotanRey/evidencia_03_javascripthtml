@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de notas ADSO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Notas - ADSO</h1>
+    <form id="formulario-notas">
+        <label for="identidad">Identidad:</label>
+        <input type="text" id="identidad" name="identidad" required><br><br>
+        
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required><br><br>
+
+        <h2>Notas de Productos</h2>
+        <label for="producto1">Nota Producto 1:</label>
+        <input type="number" id="producto1" name="producto1" step="0.01" required><br><br>
+        
+        <label for="producto2">Nota Producto 2:</label>
+        <input type="number" id="producto2" name="producto2" step="0.01" required><br><br>
+        
+        <label for="producto3">Nota Producto 3:</label>
+        <input type="number" id="producto3" name="producto3" step="0.01" required><br><br>
+
+        
+        <h2>Notas de Desempeño</h2>
+        <label for="desempeño1">Nota Desempeño 1:</label>
+        <input type="number" id="desempeño1" name="desempeño1" step="0.01" required><br><br>
+        
+        <label for="desempeño2">Nota Desempeño 2:</label>
+        <input type="number" id="desempeño2" name="desempeño2" step="0.01" required><br><br>
+
+        <h2>Nota de Conocimiento</h2>
+        <label for="conocimiento">Nota Conocimiento:</label>
+        <input type="number" id="conocimiento" name="conocimiento" step="0.01" required><br><br>
+
+        <button type="button" onclick="CalcularNota()">Calcular</button>
+        <button type="button" onclick="LimpiarFormulario()">Limpiar</button>
+    </form>
+
+    <div id="resultado"></div>
+
+
+    <script src="js11.js"></script>
+</body>
+</html>
